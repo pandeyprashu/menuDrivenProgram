@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Program Selector</h1>
+      <div id="input-container">
+        <label for="userInput">Enter input:</label>
+        <input type="text" id="userInput" />
+      </div>
+      <label for="program">Select a program:</label>
+      <select id="program" onchange="toggleInputField()">
+        <option value="factorial">Factorial</option>
+        <option value="sumOfDigits">Sum of Digits</option>
+        <option value="reverse">Reverse</option>
+        <option value="isPrime">isPrime</option>
+        <option value="leapYear">isleapyear</option>
+        <option value="oddEven">oddEven</option>
+        <option value="custom">Custom</option>
+      </select>
+
+      <button onclick="runSelectedProgram()">Run Program</button>
+      <div id="output">
+        <!-- Output will be displayed here -->
+      </div>
+    </div>
+
+    <script src="programs.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
