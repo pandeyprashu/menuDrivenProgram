@@ -60,3 +60,31 @@ function oddEven(num) {
     return "Given number is odd numebr";
   }
 }
+
+function Palindrome(num){
+  let rev=0;
+  let m=num;
+  while(num>0){
+    rev+=num%10;
+    num/=10;
+  }
+  if(m==rev){
+    return "Given number is Palindrome";
+  }else{
+    return "Given number is not Palindrome";
+  }
+}
+ function Armstrong(num){
+    let rev=0,m=num;
+    let d;
+    while(num>0){
+        d=num%10;
+        rev+=d*d*d;
+        num/=10;
+    }
+    if(rev==m){
+        return "Armstrong Number";
+    }else{
+        return "Not an Armstrong Number";
+    }
+}
