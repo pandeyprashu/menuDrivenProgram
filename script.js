@@ -31,6 +31,12 @@ function runSelectedProgram() {
     case "oddEven":
       output = oddEven(parseInt(userInput));
       break;
+    case "Palindrome":
+      output= Palindrome(parseInt(userInput));
+      break;
+    case "Armstrong":
+      output=Armstrong(parseInt(userInput));
+      break;
 
     case "custom":
       try {
